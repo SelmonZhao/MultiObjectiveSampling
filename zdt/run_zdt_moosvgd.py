@@ -1,3 +1,5 @@
+# Please use the correct version of pymoo
+# pip install pymoo==0.4.2.2 -i https://pypi.tuna.tsinghua.edu.cn/simple
 import torch
 import matplotlib.pyplot as plt
 import numpy as np
@@ -36,7 +38,7 @@ if __name__ == '__main__':
             plt.scatter(x_p, y_p, c='r')
 
             plt.scatter(loss_1.detach().cpu().numpy(),loss_2.detach().cpu().numpy())
-            plt.savefig('figs/%s_%d.png'%(cur_problem, i))
+            plt.savefig('../figs/%s_%d.png'%(cur_problem, i)) ### The path here need to be specific by user.
             plt.close()
         
         loss_1.sum().backward(retain_graph=True)
