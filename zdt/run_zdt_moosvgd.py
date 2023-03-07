@@ -1,5 +1,15 @@
 # Please use the correct version of pymoo
 # pip install pymoo==0.4.2.2 -i https://pypi.tuna.tsinghua.edu.cn/simple
+"""
+@article{liu2021profiling,
+  title={Profiling Pareto Front With Multi-Objective Stein Variational Gradient Descent},
+  author={Liu, Xingchao and Tong, Xin and Liu, Qiang},
+  journal={Advances in Neural Information Processing Systems},
+  year={2021}
+}
+
+"""
+# Run this file directly python run_zdt_moosvgd.py
 import torch
 import matplotlib.pyplot as plt
 import numpy as np
